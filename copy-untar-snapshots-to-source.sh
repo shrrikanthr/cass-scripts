@@ -14,7 +14,7 @@ find /opt/apache-cassandra-3.11.3/data -type d -name "node-${hid}" -print0 | tar
 
 tar -xzvf all_snapshots.tar.gz -C  /opt/apache-cassandra-3.11.3/data/backup
 
-## remove data directory table folders
+## remove data directory table folders (stop instance before this)
 
 find /opt/apache-cassandra-3.11.3/data/backup/ -name "node-${hid}" -print | while read x; do dest=`echo "$x" | cut -d'/' -f6-11`; dest="/$dest"; echo "rm -rf $dest/*"; done > /tmp/clear-data-before-restore.sh
 chmod 700 /tmp/clear-data-before-restore.sh
