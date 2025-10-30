@@ -71,6 +71,9 @@ mv archive_commitlogs.sh /opt/apache-cassandra-3.11.3/bin/
 mv restore_commitlogs.sh /opt/apache-cassandra-3.11.3/bin/
 mv commitlog_archiving.properties /opt/apache-cassandra-3.11.3/conf/
 
+mkdir -p /opt/apache-cassandra-3.11.3/data/commitarchive
+mkdir -p /opt/apache-cassandra-3.11.3/data/backup
+
 
 
 
