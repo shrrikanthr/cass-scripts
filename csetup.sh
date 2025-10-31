@@ -66,6 +66,7 @@ wget https://raw.githubusercontent.com/shrrikanthr/cass-scripts/refs/heads/main/
 wget https://raw.githubusercontent.com/shrrikanthr/cass-scripts/refs/heads/main/restore_commitlogs.sh
 wget https://raw.githubusercontent.com/shrrikanthr/cass-scripts/refs/heads/main/commitlog_archiving.properties
 wget https://raw.githubusercontent.com/shrrikanthr/cass-scripts/refs/heads/main/copy-untar-snapshots-to-source.sh
+wget https://raw.githubusercontent.com/shrrikanthr/cass-scripts/refs/heads/main/tar-snapshots-and-restore-snapshots.sh
 
 mv archive_commitlogs.sh /opt/apache-cassandra-3.11.3/bin/
 mv restore_commitlogs.sh /opt/apache-cassandra-3.11.3/bin/
